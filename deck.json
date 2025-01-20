@@ -6744,6 +6744,7 @@
             "extendNew": 0,
             "extendRev": 0,
             "media_files": [
+                "paste-03c2f90764e4f469286265c2279a6562d2a533fc.jpg",
                 "paste-d9c79e76c7fbce8e457345749b992942d6596acf.jpg"
             ],
             "name": "Week 8",
@@ -6757,6 +6758,176 @@
                         "\\[\\lambda \\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix} = \n\\begin{bmatrix} f_x &amp; 0 &amp; p_x \\\\ 0 &amp; f_y &amp; p_y \\\\ 0 &amp; 0 &amp; 1 \\end{bmatrix}\n\\begin{bmatrix} R &amp; t \\\\ 0&amp; 1\\end{bmatrix}\n\\begin{bmatrix} X \\\\ Y \\\\ Z \\\\ 1 \\end{bmatrix}\\]where:<br>\\(\\lambda \\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix}\\):&nbsp;\\(\\lambda\\)&nbsp;is a scalar value representing the depth or scale factor and&nbsp;\\(\\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix}\\)&nbsp;is the 2D image point coordinates in homogeneous form.&nbsp;\\(x\\)&nbsp;and&nbsp;\\(y\\)&nbsp;are the pixel coordinates, and the&nbsp;\\(1\\)&nbsp;is added for mathematical convenience in matrix operations.<br>\\(\\begin{bmatrix} f_x &amp; 0 &amp; p_x \\\\ 0 &amp; f_y &amp; p_y \\\\ 0 &amp; 0 &amp; 1 \\end{bmatrix}\\): This is the <strong>camera intrinsic matrix</strong>.&nbsp;<li>\\(f_x\\),&nbsp;\\(f_y\\): Focal lengths of the camera along the x and y axes, respectively (in pixels).</li>\n<li>\\(p_x\\),&nbsp;\\(p_y\\): Coordinates of the principal point (center of the image plane) in pixels.</li>The zeros in the matrix ensure that x projection depends only on the X coordinate and not Y, and vice versa. The final row,&nbsp;\\(0, 0, 1\\), is added because of the use of homogeneous coordinates.<br>\\(\\begin{bmatrix} R &amp; t \\\\ 0 &amp; 1\\end{bmatrix}\\): This represents the <strong>camera extrinsic matrix</strong>.&nbsp;<li>\\(R\\): A 3x3 rotation matrix representing the camera's orientation in the world.</li>\n<li>\\(t\\): A 3x1 translation vector representing the camera's position in the world.</li>\\(\\begin{bmatrix} X \\\\ Y \\\\ Z \\\\ 1 \\end{bmatrix}\\): The 3D world point coordinates in homogeneous form.&nbsp;\\(X\\),&nbsp;\\(Y\\), and&nbsp;\\(Z\\)&nbsp;represent the point's location in 3D space, and&nbsp;\\(1\\)&nbsp;is added for mathematical convenience. The matrix operation can not be performed without making it a 4x1 matrix, since&nbsp;\\([R,t]\\)&nbsp;is a 3x4 matrix.<br>"
                     ],
                     "guid": "EGc{#xJe@f",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "\\[\\lambda \\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix} = \n\\begin{bmatrix} f_x &amp; 0 &amp; p_x \\\\ 0 &amp; f_y &amp; p_y \\\\ 0 &amp; 0 &amp; 1 \\end{bmatrix}\n\\begin{bmatrix} R &amp; t \\\\ 0&amp; 1\\end{bmatrix}\n\\begin{bmatrix} X \\\\ Y \\\\ Z \\\\ 1 \\end{bmatrix}\\]Layout of this formula geometrically<br>",
+                        "<img src=\"paste-03c2f90764e4f469286265c2279a6562d2a533fc.jpg\">"
+                    ],
+                    "guid": "i;XC&@bf4k",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is Camera Calibration?",
+                        "The process of estimating the intrinsic and extrinsic parameters of a camera."
+                    ],
+                    "guid": "JCOFXMS!e&",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What are the two main types of parameters estimated during camera calibration?",
+                        "<li><strong>Intrinsic Parameters:</strong> Relate to the camera's internal characteristics (e.g., focal length, principal point).</li>\n<li><strong>Extrinsic Parameters:</strong> Relate to the camera's position and orientation in the world (e.g., rotation and translation).</li>"
+                    ],
+                    "guid": "AJ%@p*,})V",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How is camera calibration typically performed?",
+                        "By solving sets of point correspondences from images of known \"calibration patterns\" (e.g., a checkerboard)."
+                    ],
+                    "guid": "lM!uUjWe#a",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is a calibration pattern, and why is it used?",
+                        "A calibration pattern is a known object (like a checkerboard) with easily detectable features. These known points on the pattern are used to solve the equations and estimate the camera parameters. The pattern provides a set of known 3D points and their corresponding 2D image projections."
+                    ],
+                    "guid": "eQx^%I/Cwf",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is Epipolar Geometry?",
+                        "The geometry of stereo vision. It describes the geometric relationship between two views of the same scene, obtained from different viewpoints.  It's independent of scene structure and only depends on the cameras' internal parameters and relative pose."
+                    ],
+                    "guid": "hnS/e]*TK+",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is the Baseline in Epipolar Geometry?",
+                        "The line segment connecting the two camera centers (\\(O_L\\)&nbsp;and&nbsp;\\(O_R\\))."
+                    ],
+                    "guid": "sikg&I?E9J",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is an Epipole?",
+                        "The point where the baseline intersects the image plane."
+                    ],
+                    "guid": "e,(+F75oJn",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is an Epipolar Line?",
+                        "The intersection of an epipolar plane with an image plane.  All epipolar lines in an image intersect at the epipole for that image.  A point in one image defines the epipolar line in the other image."
+                    ],
+                    "guid": "Cpv7vz>64W",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Define an Epipolar Plane.",
+                        "A plane that contains the baseline (\\(O_L - O_R\\)) and a point&nbsp;\\(X\\)&nbsp;in the 3D scene."
+                    ],
+                    "guid": "gDr</6_D)Y",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "If you have a point&nbsp;\\(X_L\\)&nbsp;in the left image, how can Epipolar Geometry help you find its corresponding point&nbsp;\\(X_R\\)&nbsp;in the right image?",
+                        "Epipolar geometry constrains the search for&nbsp;\\(X_R\\)&nbsp;to lie along the epipolar line in the right image that corresponds to the point&nbsp;\\(X_L\\)&nbsp;in the left image. The point&nbsp;\\(X_R\\)&nbsp;will lie somewhere on this line."
+                    ],
+                    "guid": "N|E+kDV%}|",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is Image Rectification in the context of stereo vision?",
+                        "A transformation process that reprojects image planes onto a common plane parallel to the baseline connecting the two camera centers. This makes the epipolar lines in both images parallel and horizontally aligned, simplifying the search for corresponding points."
+                    ],
+                    "guid": "wm:yFtWe!8",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How does rectification simplify the process of finding corresponding points (stereo matching)?",
+                        "After rectification, corresponding points lie on the same horizontal line (scanline) in both images. This reduces the search space from 2D to 1D, making the matching process more efficient and robust."
+                    ],
+                    "guid": "u$3-Qfy_zx",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How to compute a disparity map?",
+                        "By matching pixels along the epipolar lines."
+                    ],
+                    "guid": "S9Eeo/Wnd",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is the formula for calculating depth (\\(Z\\)) in a parallel stereo camera system?",
+                        "\\[Z=\\lambda-\\frac{\\lambda B}{x_{I_1}-x_{I_2}}\\]where:<br>\\(Z\\)&nbsp;is the depth<br>\\(\\lambda\\)&nbsp;is the focal length of the camera<br>\\(B\\)&nbsp;is the baseline (distance between the camera centers)<br>\\((x_{I_1} - x_{I_2})\\)&nbsp;is the disparity (difference in x-coordinates of the corresponding points in the two images)<br>"
+                    ],
+                    "guid": "Bf,$Ui,vd[",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Define Disparity in the context of stereo vision.",
+                        "The difference in the image location of an object seen by the left and right cameras, resulting from the parallax between the two viewpoints. In a parallel stereo system, this is typically the difference in the x-coordinates"
+                    ],
+                    "guid": "D^9iVqcU)y",
+                    "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How are corresponding points related in a parallel stereo camera system after rectification?",
+                        "They have the same y-coordinate and differ only in their x-coordinate by the disparity:<br>\\[I_1(x,y)=I_2(x+d(x,y),y)\\]<br>"
+                    ],
+                    "guid": "LbU@&}sf8+",
                     "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
                     "tags": []
                 }
