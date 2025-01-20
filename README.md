@@ -1,6 +1,7 @@
 # COMP3204 Computer Vision Flashcards
 
 import it using CrowdAnki
+[https://ankiweb.net/shared/info/1788670778](url)
 
 for University of Southampton
 
