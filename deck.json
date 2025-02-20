@@ -5,7 +5,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e04b0e45-d758-11ef-b75c-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e05f303d-efab-11ef-909a-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -361,7 +361,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e04b837d-d758-11ef-91d2-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e05f7e9c-efab-11ef-8457-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -723,7 +723,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Convolution Theorem - Mathematial Representation",
-                        "\\[P\\times T=\\Im^1(\\Im(P).\\times\\Im(T))\\]where:<br>\\(P\\): Picture<br>\\(T\\): Template<br>\\(\\Im(x)\\): Fourier transform of&nbsp;\\(x\\)<br>\\(.\\times\\): <b>Point by Point</b> multiplication<br>"
+                        "\\[P\\times T=\\Im^{-1}(\\Im(P).\\times\\Im(T))\\]where:<br>\\(P\\): Picture<br>\\(T\\): Template<br>\\(\\Im(x)\\): Fourier transform of&nbsp;\\(x\\)<br>\\(.\\times\\): <b>Point by Point</b> multiplication<br>"
                     ],
                     "guid": "A~u&m!VhG2",
                     "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
@@ -747,7 +747,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e04bd1c4-d758-11ef-a3fd-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e05fccb5-efab-11ef-b342-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -1733,7 +1733,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e04c94ee-d758-11ef-8d54-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e0608faf-efab-11ef-99df-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -1880,7 +1880,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "How is the 2D accumulator space constructed for the hough transform?",
+                        "How is the 2D accumulator space constructed for the hough transform for finding circles?",
                         "By first getting the gradient information by&nbsp;differentiating the equation of the circle with respect to&nbsp;\\(x\\). This gives you:&nbsp;\\(dy/dx = -(x - x_0) / (y - y_0)\\)&nbsp;where&nbsp;\\(dy/dx\\)&nbsp;represents the slope of the tangent line at a point on the circle, which is the edge direction.<br><br>Then, by using the gradient information (\\(dy/dx\\)) and the original circle equation, you can derive the equation:&nbsp;\\(y - y_0 = \\frac{r}{\\sqrt{1 + \\left(\\frac{dy}{dx}\\right)^2}}\\).<br><br>This equation only has two unknowns (\\(y_0\\)&nbsp;and&nbsp;\\(r\\)), effectively reducing the parameter space to 2D."
                     ],
                     "guid": "b*a`DgveaY",
@@ -1911,7 +1911,7 @@
                     "__type__": "Note",
                     "fields": [
                         "How is the R-table constructed?",
-                        "<ol><li>Choose a reference point within the shape (usually the centroid).</li><li>For each boundary point of the shape, calculate:</li><ol><li>The distance (\\(r\\)) from the reference point to the boundary point.</li><li>The angle (\\(θ\\)) between a reference line (e.g., horizontal line) and the line connecting the reference point to the boundary point.</li></ol><li>Store these <code>(\\(r, θ\\))</code> pairs in the R-table, often discretized into bins.</li></ol>"
+                        "<ol><li>Choose a reference point within the shape (usually the centroid).</li><li>For each boundary point of the shape, calculate:</li><ol><li>The distance (\\(r\\)) from the reference point to the boundary point.</li><li>The angle (\\(θ\\)) between a reference line (e.g., horizontal line) and the line connecting the reference point to the boundary point.</li></ol><li>Store these&nbsp;\\((r,\\theta)\\)&nbsp;pairs in the R-table, often discretized into bins.</li></ol>"
                     ],
                     "guid": "ob`v&bvQ?K",
                     "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
@@ -2735,7 +2735,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e04d7f4a-d758-11ef-bb49-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e06153da-efab-11ef-96bb-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -3751,7 +3751,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "How does the constant offset value affect the result?",
+                        "How does the constant offset value affect the result of mean thresholding?",
                         "<li>Adding a positive offset makes the threshold higher, resulting in more pixels being classified as black.</li>\n<li>Adding a negative offset makes the threshold lower, resulting in more pixels being classified as white.</li>"
                     ],
                     "guid": "qb=2iMb0&#",
@@ -3986,7 +3986,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e04e5634-d758-11ef-b05b-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e062166d-efab-11ef-9350-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -4236,7 +4236,7 @@
                     "__type__": "Note",
                     "fields": [
                         "What is the formula for a normalized central moment (\\(η_{pq}\\))?",
-                        "\\[\\mu_{pq}=\\frac{\\mu_{pq}}{\\mu_{00}^\\lambda}\\text{ where }\\gamma=\\frac{(p+q)}{2}+1\\]where:<br>\\(\\mu_{pq}\\)&nbsp;is the central moment of order&nbsp;\\((p,q)\\)<br>\\(\\mu_{00}\\)&nbsp;is the zeroth-order central moment (which is the same as the area)<br>"
+                        "\\[η_{pq}=\\frac{\\mu_{pq}}{\\mu_{00}^\\lambda}\\text{ where }\\gamma=\\frac{(p+q)}{2}+1\\]where:<br>\\(\\mu_{pq}\\)&nbsp;is the central moment of order&nbsp;\\((p,q)\\)<br>\\(\\mu_{00}\\)&nbsp;is the zeroth-order central moment (which is the same as the area)<br>"
                     ],
                     "guid": "A;ZrIkfy4x",
                     "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
@@ -4786,7 +4786,7 @@
                     "__type__": "Note",
                     "fields": [
                         "What is the formula for the Gaussian kernel&nbsp;\\((g(x, y; t))\\)?",
-                        "\\[g(g,y;t)=\\frac{1}{2\\pi t}e^{-(x^2+y^2)/2t}\\]where:<br>\\(x\\)&nbsp;and&nbsp;\\(y\\)&nbsp;are the spatial coordinates<br>\\(t\\)&nbsp;is the scale parameter (related to the standard deviation&nbsp;\\(\\sigma\\)&nbsp;by&nbsp;\\(t = \\sigma^2\\))<br>"
+                        "\\[g(g,y;t)=\\frac{1}{2\\pi t}e^{-\\frac{(x^2+y^2)}{2t}}\\]where:<br>\\(x\\)&nbsp;and&nbsp;\\(y\\)&nbsp;are the spatial coordinates<br>\\(t\\)&nbsp;is the scale parameter (related to the standard deviation&nbsp;\\(\\sigma\\)&nbsp;by&nbsp;\\(t = \\sigma^2\\))<br>"
                     ],
                     "guid": "Og):h(l<5y",
                     "note_model_uuid": "0aa2c666-d1e9-11ef-90da-204ef6f14df6",
@@ -5440,7 +5440,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e04f67a9-d758-11ef-88cb-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e063285a-efab-11ef-840e-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -6740,7 +6740,7 @@
             "__type__": "Deck",
             "children": [],
             "crowdanki_uuid": "e05051ee-d758-11ef-9177-204ef6f14df6",
-            "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "deck_config_uuid": "e063eba5-efab-11ef-afbd-204ef6f14df6",
             "desc": "",
             "dyn": 0,
             "extendNew": 0,
@@ -6939,14 +6939,14 @@
         }
     ],
     "crowdanki_uuid": "e0495d2c-d758-11ef-8abb-204ef6f14df6",
-    "deck_config_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+    "deck_config_uuid": "e05f08f9-efab-11ef-9b82-204ef6f14df6",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
             "answerAction": 0,
             "autoplay": true,
             "buryInterdayLearning": false,
-            "crowdanki_uuid": "554aa876-d75e-11ef-b628-204ef6f14df6",
+            "crowdanki_uuid": "e05f08f9-efab-11ef-9b82-204ef6f14df6",
             "desiredRetention": 0.9,
             "dyn": false,
             "easyDaysPercentages": [
@@ -6980,7 +6980,7 @@
                 0.6621
             ],
             "fsrsWeights": [],
-            "ignoreRevlogsBeforeDate": "",
+            "ignoreRevlogsBeforeDate": "1970-01-01",
             "interdayLearningMix": 0,
             "lapse": {
                 "delays": [
@@ -6992,7 +6992,7 @@
                 "mult": 0.0
             },
             "maxTaken": 60,
-            "name": "Exam Grind",
+            "name": "Archive",
             "new": {
                 "bury": false,
                 "delays": [
@@ -7005,8 +7005,8 @@
                     4,
                     0
                 ],
-                "order": 0,
-                "perDay": 9999
+                "order": 1,
+                "perDay": 0
             },
             "newGatherPriority": 0,
             "newMix": 0,
@@ -7019,8 +7019,728 @@
                 "ease4": 1.3,
                 "hardFactor": 1.2,
                 "ivlFct": 1.0,
-                "maxIvl": 1,
-                "perDay": 9999
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e05f303d-efab-11ef-909a-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e05f7e9c-efab-11ef-8457-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e05fccb5-efab-11ef-b342-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e0608faf-efab-11ef-99df-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e06153da-efab-11ef-96bb-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e062166d-efab-11ef-9350-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e063285a-efab-11ef-840e-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        },
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "e063eba5-efab-11ef-afbd-204ef6f14df6",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [
+                0.40255,
+                1.18385,
+                3.173,
+                15.69105,
+                7.1949,
+                0.5345,
+                1.4604,
+                0.0046,
+                1.54575,
+                0.1192,
+                1.01925,
+                1.9395,
+                0.11,
+                0.29605,
+                2.2698,
+                0.2315,
+                2.9898,
+                0.51655,
+                0.6621
+            ],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "1970-01-01",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Archive",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 0
             },
             "reviewOrder": 0,
             "secondsToShowAnswer": 0.0,
